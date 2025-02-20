@@ -10,7 +10,7 @@ const Leaderboard = () => {
 
   const fetchLeaderboard = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/complaints/leaderboard", {
+      const res = await axios.get("https://quirkyroomie-backend.onrender.com/api/complaints/leaderboard", {
         headers: { Authorization: localStorage.getItem("token") }
       });
       setLeaderboard(res.data);

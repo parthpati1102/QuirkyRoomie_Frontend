@@ -13,7 +13,7 @@ const ComplaintForm = ({ onComplaintAdded }) => {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/api/complaints",
+        "https://quirkyroomie-backend.onrender.com/api/complaints",
         { title, description, type, severity },
         { headers: { Authorization: localStorage.getItem("token") } }
       );

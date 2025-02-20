@@ -12,7 +12,7 @@ const ComplaintList = () => {
 
   const fetchComplaints = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/complaints", {
+      const res = await axios.get("https://quirkyroomie-backend.onrender.com/api/complaints", {
         headers: { Authorization: localStorage.getItem("token") }
       });
       setComplaints(res.data);
@@ -29,7 +29,7 @@ const ComplaintList = () => {
 
     try {
       await axios.post(
-        `http://localhost:5000/api/complaints/${id}/vote`,
+        `https://quirkyroomie-backend.onrender.com/api/complaints/${id}/vote`,
         { vote: voteType },
         { headers: { Authorization: localStorage.getItem("token") } }
       );
@@ -47,7 +47,7 @@ const ComplaintList = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/complaints/${id}/resolve`,
+        `https://quirkyroomie-backend.onrender.com/api/complaints/${id}/resolve`,
         {},
         { headers: { Authorization: localStorage.getItem("token") } }
       );

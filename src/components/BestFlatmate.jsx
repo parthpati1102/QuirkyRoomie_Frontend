@@ -10,7 +10,7 @@ const BestFlatmate = () => {
 
   const fetchBestFlatmate = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/complaints/best-flatmate", {
+      const res = await axios.get("https://quirkyroomie-backend.onrender.com/api/complaints/best-flatmate", {
         headers: { Authorization: localStorage.getItem("token") }
       });
       setBestFlatmate(res.data);

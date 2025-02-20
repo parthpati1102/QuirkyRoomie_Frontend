@@ -11,7 +11,7 @@ const TopComplaint = () => {
 
   const fetchTopComplaint = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/complaints/trending", {
+      const res = await axios.get("https://quirkyroomie-backend.onrender.com/api/complaints/trending", {
         headers: { Authorization: localStorage.getItem("token") }
       });
       setTopComplaint(res.data);
