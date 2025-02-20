@@ -1,8 +1,25 @@
-# React + Vite
+# QuirkyRoomie - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend of QuirkyRoomie, a flatmate conflict management system built using React.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[Frontend Deployed on Vercel](https://quirky-roomie-frontend.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
+- React (Vite)
+- React Router
+- Context API / Redux
+- Tailwind CSS
+
+## 📑 Features
+- Authentication (JWT-based)
+- Complaint logging & voting
+- Gamification (Karma Points & Leaderboard)
+- UI for tracking and resolving complaints
+
+## 🛠️ Installation & Setup
+Install dependencies:
+ - npm install
+
+Start the development server:
+-npm run dev
